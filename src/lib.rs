@@ -276,7 +276,7 @@ pub struct Response {
 }
 
 #[derive(Deserialize, Debug)]
-struct BlobResponse {
+pub struct BlobResponse {
     pub song: Option<Song>,
     pub hits: Option<Vec<Hit>>,
     pub album: Option<Album>,
