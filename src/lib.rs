@@ -272,12 +272,12 @@ pub struct Date {
 
 #[derive(Deserialize, Debug)]
 pub struct Response {
-    response: BlobResponse,
+    pub response: BlobResponse,
 }
 
 #[derive(Deserialize, Debug)]
 struct BlobResponse {
-    song: Option<Song>,
-    hits: Option<Vec<Hit>>,
-    album: Option<Album>,
+    pub song: Option<Song>,
+    pub hits: Option<Vec<Hit>>,
+    pub album: Option<Album>,
 }
