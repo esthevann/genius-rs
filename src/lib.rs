@@ -271,7 +271,7 @@ pub struct Date {
 }
 
 #[derive(Deserialize, Debug)]
-struct Response {
+pub struct Response {
     response: BlobResponse,
 }
 
